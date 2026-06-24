@@ -1,27 +1,31 @@
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body{
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background:#000;
-    padding:10px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    padding: 10px;
+    overflow: hidden; /* Optional: Prevents accidental scrollbars if the video hits max-height */
 }
 
 .container{
-    width:100%;
-    max-width:1200px;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;          /* Added: Ensures the container shrinks nicely around the video */
+    justify-content: center;
 }
 
 video{
-    display:block;
-    width:100%;
-    height:auto;
-    max-height:95vh;
-    border-radius:12px;
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 90vh; /* Changed slightly from 95vh to account for the body's padding */
+    border-radius: 12px;
+    object-fit: contain; /* Added: Maintains aspect ratio perfectly within bounds */
 }

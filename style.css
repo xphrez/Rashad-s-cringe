@@ -5,33 +5,23 @@
 }
 
 body{
-    background:#111;
-    color:white;
-    font-family:Arial, sans-serif;
+    min-height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
-    min-height:100vh;
+    background:#000;
+    padding:10px;
 }
 
 .container{
-    text-align:center;
-    width:90%;
-    max-width:900px;
-}
-
-h1{
-    margin-bottom:20px;
-    font-size:2rem;
+    width:100%;
+    max-width:1200px;
 }
 
 video{
+    display:block;
     width:100%;
-    border-radius:15px;
-    box-shadow:0 0 20px rgba(255,255,255,0.2);
-}
-
-p{
-    margin-top:15px;
-    color:#ccc;
+    height:auto;
+    max-height:95vh;
+    border-radius:12px;
 }
